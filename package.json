@@ -1,0 +1,11 @@
+{
+  "name": "prez",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass:compile": "node-sass ./css/style.scss ./css/style.css -w"
+  },
+  "author": "Majid Ghasemi",
+  "license": "ISC",
+  "description": ""
+}

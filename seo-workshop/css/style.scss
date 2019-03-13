@@ -1,0 +1,798 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{ 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+li {
+  list-style: none ;
+  margin-bottom: 5px;
+  font-style: oblique;
+}
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+  &:before, &:after {
+  	content: '';
+  	content: none;
+  }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  min-height: 740px;
+  color: #333;
+	background: #f8f8f8;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+.step {
+  position: relative;
+  width:  900px;
+  height: 700px;
+  padding: 0px;
+  border-radius: 4px;
+
+  //font-size: 75px;
+  font-weight: 700;
+  text-align: center;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  -ms-box-sizing:     border-box;
+  -o-box-sizing:      border-box;
+  box-sizing:         border-box;
+
+  &--0 {
+    font-size: 75px;
+    line-height: 700px;
+  }
+  &--1 {
+    &__ul {
+      & > * {
+        font-size: 60px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &--2 {
+    & > h1 {
+      font-size: 70px;
+      margin-top: 60px;
+      margin-bottom: 100px;
+    }
+
+    & > p {
+      font-size: 50px ;
+      color: rgb(4, 3, 80) ;
+      line-height: 500px;
+    }
+  }
+
+  &--3 {
+    & > h1 {
+      font-size: 70px;
+      margin-top: 25px;
+      margin-bottom: 100px;
+    }
+
+    & > p {
+      font-size: 42px ;
+      color: rgb(15, 0, 0) ;
+      line-height: 100px;
+    }
+  }
+
+  &--4 {
+    & > h1 {
+      font-size: 85px;
+      line-height: 650px;
+     // margin-top: 600px;
+    }
+  }
+
+  &--5 {
+    & > p {
+      font-size: 45px;
+      margin: 35px auto ;
+      line-height: 50px;
+    }
+
+    & > img {
+      width: 850px;
+      height: 525px ;
+    }
+  }
+
+  &--6 {
+    & > h1 {
+      font-size: 65px;
+      margin: 35px auto ;
+     // margin-top: 600px;
+    }
+
+    & > ul {
+      font-size: 55px;
+      line-height: 150px;
+    }
+  }
+
+  &--7 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 95px auto ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 85px;
+    }
+  }
+
+  &--8 {
+    & > p {
+      font-size: 35px;
+      line-height: 75px ;
+      margin: 35px auto 145px auto  ;
+    }
+    & > span {
+      font-size: 45px;
+      color: rgba(99, 68, 68, 0.788) ;
+    }
+  }
+
+  &--9 {
+    & > img {
+      width: 800px;
+      height: 700px;
+    }
+  }
+
+  &--10 {
+    & > p {
+      font-size: 45px ;
+      line-height: 70px;
+      margin: 25px auto 35px auto ;
+    }
+    & > span {
+      font-size: 50px;
+      line-height: 70px;
+      color: rgba(255, 0, 0, 0.493) ;
+    }
+  }
+
+  &--11 {
+    & > h1 {
+      font-size: 65px;
+      line-height: 85px;
+      margin: 100px auto 200px auto ;
+    }
+
+    & > p {
+      font-size: 40px;
+      color: #333 ;
+    }
+  }
+
+
+  &--12 {
+    & > h1 {
+      font-size: 50px;
+      margin: 45px auto 55px auto ;
+      line-height: 65px;
+    }
+
+    & > p {
+      font-size: 40px;
+      line-height: 85px;
+    }
+  }
+
+  &--13 {
+    & > h1 {
+      font-size: 65px;
+      margin: 35px auto ;
+      line-height: 85px;
+     // margin-top: 600px;
+    }
+
+    & > ul {
+      font-size: 45px;
+      line-height: 85px;
+    }
+  }
+
+
+  &--14 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 18rem auto ;
+      line-height: 65px;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 85px;
+    }
+  }
+
+  &--15 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 65px auto ;
+      line-height: 65px;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 65px;
+    }
+  }
+
+  &--16 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 65px auto ;
+      line-height: 65px;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 65px;
+    }
+  }
+
+  &--17 {
+    & > img {
+      width: 875px;
+      height: 700px;
+    }
+  }
+
+
+}
+
+
+
+
+
+.impress-enabled .step {
+  margin: 0;
+  opacity: 0.2;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition:    opacity 1s;
+  -ms-transition:     opacity 1s;
+  -o-transition:      opacity 1s;
+  transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+#overview { display: none }
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+.p {
+  &--0 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 95px auto ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 85px;
+    }
+  }
+
+  &--1 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 95px auto ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 85px;
+    }
+  }
+
+  &--2 {
+    & > img {
+      margin-top: 2rem;
+      width: 750px ;
+      height: 650px ;
+    }
+  }
+
+  &--3 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 95px auto ;
+    }
+
+    & > ul {
+      font-size: 50px;
+      line-height: 100px;
+    }
+  }
+
+  &--4 {
+    & > h1 {
+      font-size: 60px;
+      margin: 55px auto ;
+    }
+
+    & > h2 {
+      font-size: 45px ;
+      margin-bottom: 115px;
+      color: rgb(159, 218, 42) ;
+    }
+
+    & > p {
+      font-size: 36px;
+      line-height: 60px;
+    }
+  }
+
+  &--5 {
+  
+    & > p {
+      margin-top: 3.85rem;
+      font-size: 40px;
+      line-height: 70px;
+    }
+
+  }
+
+  &--6 {
+    & > h1 {
+      font-size: 60px;
+      margin: 55px auto ;
+      color: rgb(241, 237, 232) ;
+    }
+
+    & > ul {
+      font-size: 45px ;
+      line-height: 85px ;
+      color: rgb(230, 240, 240) ;
+    }
+  }
+
+  &--7 {
+
+    & > h1 {
+      font-size: 60px;
+      margin: 55px auto 9rem auto ;
+    }
+
+    & > ul {
+      font-size: 45px ;
+      line-height: 85px ;
+      color: rgba(46, 48, 48, 0.829) ;
+    }
+
+  }
+
+  &--8 {
+    & > h1 {
+      font-size: 55px;
+      margin: 55px auto 5rem auto ;
+    }
+
+    & > ul {
+      font-size: 45px ;
+      line-height: 85px ;
+    }
+
+    & > p {
+      font-size: 50px ;
+      color: rgb(52, 90, 90) ;
+      word-spacing: 8px ;
+    }
+  }
+
+  &--9 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 95px auto ;
+      color: #e67e22 ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 125px;
+      color: rgba(78, 54, 54, 0.842)
+    }
+  }
+
+  &--10 {
+    & > h1 {
+      font-size: 50px;
+      margin: 45px auto 100px auto ;
+    }
+
+    & > h2 {
+      font-size: 45px ;
+      margin-bottom: 115px;
+      color: rgb(230, 245, 201) ;
+    }
+
+    & > p {
+      font-size: 36px;
+      line-height: 60px;
+    }
+  }
+  
+  &--11 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 95px auto ;
+      color: rgba(255, 255, 255, 0.993) ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 90px;
+    }
+  }
+
+  &--12 {
+    & > h1 {
+      font-size: 60px;
+      margin: 45px auto 55px auto ;
+      color: aliceblue ;
+    }
+
+    & > p {
+      font-size: 38px;
+      line-height: 90px;
+    }
+
+  }
+
+  &--13 {
+    & > h1 {
+      font-size: 50px;
+      margin: 45px auto 95px auto ;
+      color: rgba(64, 71, 77, 0.527) ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 90px;
+    }
+  }
+
+  &--14 {
+    & > h1 {
+      font-size: 50px;
+      margin: 45px auto 95px auto ;
+      color: rgba(64, 71, 77, 0.527) ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 90px;
+    }
+  }
+
+  &--15 {
+    & > h1 {
+      font-size: 50px;
+      margin: 5px auto 18px auto ;
+      color: rgba(170, 194, 216, 0.911) ;
+    }
+
+    & > p {
+      font-size: 28px;
+      line-height: 45px;
+      color: #333 ;
+    }
+  }
+
+  &--16 {
+    & > h1 {
+      font-size: 40px;
+      margin: 15px auto 68px auto ;
+    }
+    
+    & > img {
+      width: 700px ;
+      height: 550px;
+    }
+  }
+
+  &--17 {
+    & > p {
+      margin-top: 10rem;
+      font-size: 28px;
+      line-height: 95px;
+      color: #333 ;
+    }
+  }
+
+
+}
+
+
+.index {
+
+  &--0 {
+    & > h1 {
+      font-size: 65px ;
+      margin-top: 11rem ;
+      line-height: 8.5rem;
+    }
+  }
+
+  &--1 {
+    & > h1 {
+      font-size: 50px;
+      margin: 2.5rem auto 5rem auto ;
+      color: rgba(253, 253, 253, 0.911) ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 65px;
+      color: #333 ;
+    }
+
+  }
+
+  &--2 {
+    & > h1 {
+      font-size: 50px;
+      margin: 2.5rem auto 5rem auto ;
+      color: rgba(253, 253, 253, 0.911) ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 65px;
+      color: #333 ;
+    }
+
+  }
+
+  &--3 {
+
+    & > h1 {
+      font-size: 50px;
+      margin: 2.5rem auto 5rem auto ;
+      color: rgba(253, 253, 253, 0.911) ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 65px;
+      color: #333 ;
+    }
+  }
+
+  &--4 {
+    & > h1 {
+      font-size: 50px;
+      margin: 2.5rem auto 5rem auto ;
+      color: rgba(95, 79, 79, 0.911) ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 65px;
+      color: #333 ;
+    }
+  }
+
+  &--5 {
+    & > h1 {
+      font-weight: 800 ;
+      font-size: 80px;
+      margin: 18rem auto 5rem auto ;
+      color: rgba(6, 31, 48, 0.911) ;
+    }
+  }
+
+  &--6 {
+    & > h1 {
+      font-size: 50px;
+      margin: 2.5rem auto 5rem auto ;
+      color: rgba(165, 10, 10, 0.911) ;
+    }
+
+    & > p {
+      font-size: 45px;
+      line-height: 65px;
+      color: #333 ;
+      line-height: 2 ;
+    }
+  }
+
+  &--7 {
+    & > p {
+      font-size: 58px;
+      line-height: 65px;
+      color: #333 ;
+      line-height: 2 ;
+    }
+  }
+
+  &--8 {
+    & > h1 {
+      font-size: 70px;
+      margin: 2.5rem auto 10rem auto ;
+      color: rgba(22, 107, 5, 0.911) ;
+    }
+
+    & > p {
+      font-size: 55px;
+      line-height: 65px;
+      color: #333 ;
+      line-height: 2 ;
+    }
+  }
+
+  &--9 {
+    & > h1 {
+      font-size: 70px;
+      margin: 2.5rem auto 10rem auto ;
+      color: rgba(22, 107, 5, 0.911) ;
+    }
+
+    & > p {
+      font-size: 55px;
+      line-height: 1.5;
+      color: #333 ;
+      line-height: 2 ;
+    }
+  }
+
+  &--10 {
+    & > h1 {
+      font-size: 60px;
+      margin: 2.5rem auto 1rem auto ;
+      color: rgba(204, 49, 235, 0.911) ;
+    }
+
+    & > p {
+      font-size: 44px;
+      color: #333 ;
+      line-height: 1 ;
+      color: rgba(182, 250, 227, 0.904) ;
+    }
+  }
+
+  &--11 {
+    & > h1 {
+      font-size: 60px;
+      margin: 2.5rem auto 7rem auto ;
+      color: rgba(247, 232, 234, 0.933) ;
+    }
+
+    & > p {
+      font-size: 48px;
+      color: #333 ;
+      line-height: 1.5 ;
+    }
+  }
+
+  &--12 {
+    & > p {
+      font-size: 40px;
+      color: rgb(63, 41, 41) ;
+      line-height: 1.15 ;
+    }
+  }
+
+  &--13 {
+    & > h1 {
+      font-size: 60px;
+      margin: 2.5rem auto 10rem auto ;
+      color: rgba(247, 232, 234, 0.575) ;
+    }
+
+    & > p {
+      font-size: 48px;
+      color: #333 ;
+      line-height: 1.5 ;
+    }
+  }
+
+  &--14 {
+    & > h1 {
+      font-size: 60px;
+      margin: 2.5rem auto 7rem auto ;
+      color: rgb(167, 96, 106) ;
+    }
+
+    & > p {
+      font-size: 48px;
+      color: rgb(27, 112, 112) ;
+      line-height: 1.5 ;
+    }
+  }
+
+  &--15 {
+    & > h1 {
+      font-size: 48px;
+      margin: 2.5rem auto 7rem auto ;
+      color: rgba(247, 232, 234, 0.933) ;
+    }
+
+    & > p {
+      font-size: 40px;
+      color: rgba(226, 225, 173, 0.596) ;
+      line-height: 1.5 ;
+    }
+  }
+
+  &--16 {
+    & > p {
+      font-size: 38px;
+      color: rgb(240, 232, 232) ;
+      line-height: 1.7 ;
+    }
+  }
+
+  &--17 {
+    & > h1 {
+      font-size: 60px;
+      margin: 2.5rem auto 7rem auto ;
+      color: rgba(206, 59, 78, 0.933) ;
+    }
+
+    & > p {
+      font-size: 48px;
+      color: #333 ;
+      line-height: 2.5 ;
+    }
+  }
+
+
+  
+}
+
+
+
+
+
+
