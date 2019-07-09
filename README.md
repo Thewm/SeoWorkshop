@@ -1,6 +1,5 @@
 # SEO Workshop🤗
    
-***
-This workshop presented by me in imam khomeini international university (IKIU)   
-Slides made by impress.js and one of this libraries called polygonial.
-***
+   
+> This workshop presented by me in imam khomeini international university (IKIU)   
+> Slides made by impress.js and one of this libraries called polygonial.
